@@ -9,7 +9,7 @@ app:
   # version: ""
 
   # comment
-  # Set the Maven coordinates of the Maven artifact to deploy for the
+  # Set the Maven coordinates of the Maven artifact to deploy for the 
   # "Deploy, and run" scenario.
   maven:
     groupId: org.apache.commons
