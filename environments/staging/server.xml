@@ -1,11 +1,15 @@
 <server>
   <featureManager>
-    <feature>servlet-4.0</feature>
-    <feature>jsp-2.3</feature>
+    <feature>servlet-6.0</feature>
+    <feature>jsp-3.1</feature>
+    <feature>cdi-4.0</feature>
   </featureManager>
 
   <httpEndpoint id="defaultHttpEndpoint" httpPort="9080" httpsPort="9443"/>
 
-  <!-- Place WAR in apps/, then reference it -->
-  <webApplication id="struts2-showcase" location="struts2-showcase-7.1.1.war" contextRoot="/showcase"/>
+  <!-- Struts2 showcase 6.6.0 -->
+  <webApplication id="struts2-showcase" location="struts2-showcase.war" contextRoot="/"/>
+  
+  <!-- Increase startup timeout for large applications -->
+  <applicationManager startTimeout="5m"/>
 </server>
