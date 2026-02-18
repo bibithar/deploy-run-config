@@ -1,14 +1,14 @@
 <server>
   <featureManager>
-    <feature>servlet-5.0</feature>
-    <feature>pages-3.0</feature>
-    <feature>cdi-3.0</feature>
-    <feature>expressionLanguage-4.0</feature>
+    <feature>servlet-4.0</feature>
+    <feature>jsp-2.3</feature>
+    <feature>cdi-2.0</feature>
+    <feature>el-3.0</feature>
   </featureManager>
 
   <httpEndpoint id="defaultHttpEndpoint" httpPort="9080" httpsPort="9443"/>
 
-  <!-- Struts2 showcase 6.6.0 (Jakarta EE 9) -->
+  <!-- Struts2 showcase 6.6.0 (Java EE 8 - uses javax.* packages) -->
   <webApplication id="struts2-showcase" location="struts2-showcase.war" contextRoot="/"/>
   
   <!-- Increase startup timeout for large applications -->
