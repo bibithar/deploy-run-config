@@ -1,7 +1,11 @@
 <server>
-    <featureManager>
-        <feature>servlet-3.1</feature>
-        <feature>transportSecurity-1.0</feature>
-    </featureManager>
-    <application name="app" context-root="/" location="ferret.war" type="war" />
+  <featureManager>
+    <feature>servlet-4.0</feature>
+    <feature>jsp-2.3</feature>
+  </featureManager>
+
+  <httpEndpoint id="defaultHttpEndpoint" httpPort="9080" httpsPort="9443"/>
+
+  <!-- Place WAR in apps/, then reference it -->
+  <webApplication id="struts2-showcase" location="struts2-showcase-7.1.1.war" contextRoot="/showcase"/>
 </server>
