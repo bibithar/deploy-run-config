@@ -16,6 +16,8 @@ app:
     artifactId: commons-lang3
     version: 3.13.0
     type: jar
+    validation:
+      enabled: false
 
   # Set minimum and maximum number of instances of the application. 
   # If the minimum and maximum values are different, the service scales the
