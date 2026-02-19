@@ -14,7 +14,7 @@ app:
   maven:
     groupId: org.apache.struts
     artifactId: struts2-showcase
-    version: 6.6.0
+    version: 6.6.1
     type: war
     validation:
       enabled: true
